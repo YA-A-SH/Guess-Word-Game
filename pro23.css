@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 00;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    
+    transition: 0.6s;
+    user-select: none;
+    box-sizing: border-box;
+}
+.main{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.head{
+    margin-top: 40px;
+    width: 90%;
+    height: 13%;
+    text-align: center;
+    background-color: #ffffff20;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head h2{
+    width: 100%;
+    font-size: 50px;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+}
+.head:hover h2{
+    background-color: #fff;
+    color: #333;
+}
+.body{
+    height: 100%;
+    background-color: #ffffff20;
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    display:flex ;
+    gap: 20px;
+
+}
+.body .keyCollor{
+    flex: 1;
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.keyCollor h1{
+    margin-bottom: 10%;
+    font-size: 40px;
+    color: white;
+}
+.keyCollor div {
+    margin: 10px;
+    width: 70%;
+    text-align: start;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.w1 , .w2{
+    font-size: 22px;
+    color: #348218;
+}
+.w1:hover , .w2:hover {
+    scale: 1.05nm ;
+}
+.w3{
+    font-size: 22px;
+    color: #f74949;
+}
+.w4{
+    font-size: 25px;
+    color: red;
+}
+.sp{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.sp1{
+    background-color: #ff9b07;
+}
+.sp2{
+    background-color: #07a98b;
+}
+.sp3{
+    background-color: #272f41;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.body .word{
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    
+}
+.word div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.tryyy{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.spanTry{
+    font-size: 20px;
+    color: white;
+}
+.letter input{
+    display: inline-block;
+    width: 50px;
+    height: 50px ;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid ;
+    background-color: #ffffff40;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    caret-color: white;
+    color: white;
+}
+.letter input:focus{
+    outline-color:#ffffff60 ;
+}
+.disable{
+    opacity: 0.4;
+    pointer-events: none;
+}
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+    gap: 12px;
+}
+#cheakWord {
+
+    color: black;
+    font-size: 21px;
+    border: 2px solid ;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 220px;
+    text-align: center;
+    padding: 5px;
+    
+}
+#restart{
+    display: none;
+    padding: 5px;
+    border: 2px solid  white;
+    background-color: gold;
+    font-size: 20px;
+    border-radius: 12px;
+    width: 100%;
+    margin: 5px;
+}
+#restart:hover{
+    scale: 1.1;
+    background-color: black;
+    color: gold;
+}
+#hint{
+    color: black;
+    font-size: 21px;
+    border: 2px solid ;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    
+}
+#cheakWord:hover{
+    background-color: green;
+    color: white;
+    border: 2px solid ;
+}
+#hint:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid ;
+}
+
+
+.correctAndin{
+    background-color: #ff9b07 !important;
+  
+}
+.correctAndNot{
+    background-color: #07a98b !important;
+    
+}
+.not{
+    background-color: #272f41 !important;
+    
+}
+
+.win , .faild{
+    border: 2px solid white ;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.win{
+    background-color: green;
+}
+.faild{
+    background-color: red;
+}
+.done{
+    opacity: 0.7;
+}
+.btn_done{
+    pointer-events: none;
+    cursor: none;
+}
+
+
+.footer{
+    margin-bottom: 10px;
+    width: 90%;
+    height: 8%;
+    text-align: center;
+    background-color: #ffffff20;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h2{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 17px;
+}
+.footer:hover h2{
+    background-color: #fff;
+    color: green;
+    scale: 1.1;
+}
+
